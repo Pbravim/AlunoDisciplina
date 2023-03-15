@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <b>Adicionar Disciplina</b><br>
+    Nome: <input id="nomeDisc"> <br>
+    Código: <input id="cod"> <br>
+
+    <button onclick="disciplinaControlador.inserir()">Inserir</button><br>
+
+    <h2>Listagem de Disciplinas</h2>
+    <p id="listagemDisc">Nome - Código</p>
+
+    <b> Adicionar Aluno na Disciplina</b><br>
+    Nome: <input id="nomeALuno"><br>
+    Idade: <input id="idadeAluno"><br>
+    Disciplina: <input id="alunoDisc"><br>
+
+    <button onclick="disciplinaControlador.inserirAlunoDisciplina()">Inserir</button>
+
+    <h1>Listagem de Alunos</h1>
+    <p id="listagemAlunoDisc">Nome - Disciplina</p>
+
+    <script src="js/model/aluno.js"></script>
+    <script src="js/model/disciplina.js"></script>
+    <script src="js/repositorio/aluno-repositorio.js"></script>
+    <script src="js/repositorio/disciplina-repositorio.js"></script>
+    <script src="js/servico/aluno-servico.js"></script>
+    <script src="js/servico/disciplina-servico.js"></script>
+    <script src="js/controller/aluno-controlador.js"></script>
+    <script src="js/controller/disciplina-controlador.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
